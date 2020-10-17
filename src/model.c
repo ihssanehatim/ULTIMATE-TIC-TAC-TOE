@@ -1,6 +1,5 @@
 #include "model.h"
 
-
 s_move *create_empty_move(){
 
     s_move* move = (s_move*)malloc(sizeof(s_move));
@@ -10,9 +9,9 @@ s_move *create_empty_move(){
         return NULL;
     }
     else{
-        move.inner_position=FREE;
-        move.outer_position=FREE;
-        move.player=NOBODY;
+        move->inner_position=FREE;
+        move->outer_position=FREE;
+        move->player=NOBODY;
 
         return move;
     }
